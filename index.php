@@ -32,14 +32,18 @@
         ]
         ];
 
-        foreach ($faq as $k => $value) {
-            foreach ($value as $key) {
-                echo $key."<br>";
+        foreach ($faq as $problem => $value) {
+            foreach ($value as $text) {
+                if (array_search($text, $value) == "question") {
+                    echo "<strong>".$text."</strong><br>";    
+                } elseif (array_search($text, $value) == "answer") {
+                    echo $text."<br>";
+                }
             }
         }
 
 ?>
-<!-- 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,4 +54,4 @@
 <body>
     
 </body>
-</html> -->
+</html>
