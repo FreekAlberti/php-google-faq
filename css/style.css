@@ -5,6 +5,8 @@
   font-family: 'Roboto', sans-serif;
 }
 
+/* HEADER */
+
 header {
   border-bottom: 1px solid gray;
   position: fixed;
@@ -75,6 +77,8 @@ header {
   margin-right: 5px;
 }
 
+/* SECTION */
+
 section {
   margin-top: 180px;
 }
@@ -82,4 +86,52 @@ section {
 .wrapper {
   width: 1000px;
   margin: auto;
+}
+
+.domanda {
+  color: #3F4346;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.risposta {
+  color: #3F4346;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 60px;
+  line-height: 25px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #F5F5F5;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-footer {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.nav-footer li {
+  margin-right: 5px;
+}
+
+.nav-footer a {
+  text-decoration: none;
+  color: #3F4346;
+  font-size: 10px;
+}
+
+.lingua {
+  width: 200px;
 }
